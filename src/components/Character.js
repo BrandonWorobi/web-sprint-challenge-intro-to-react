@@ -1,37 +1,45 @@
-import React from 'react';
-import styled from 'styled-components';
 
-const CharacterCards = styled.div`
-      background-color: black;
-      opacity: 80%;
-      color: lightgrey;
-      width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 2%;
-      margin-bottom: 5%;
-      padding: 4px;
+import React from 'react';
+import styled from 'styled-components'
+
+
+const Container = styled.div`
+width:100%;
 `
 
-const Character = props => {
-let {data} = props;
+const Card = styled.div`
+border: 2px solid black; 
+width: 50%;
+background-color: #958855;
+ 
+`
 
-    return(
-        <div>
-            {data.map(starWars =>{
+const Characters = (props) => 
+{
+    const { characters } = props;
+    return (
+        <Container className="container">
+            { characters.map((p) =>
+            {
                 return (
-                    <CharacterCards>
-            <div>
-            <h3>Name: {starWars.name}</h3>
-            <h3>Gender: {starWars.gender}</h3>
-            <h3>Birth Year: {starWars.birth_year}</h3>
-            </div>
-            </CharacterCards>
-                )
-})}
+                    <Card>
+                        <div>
+                            <h2>{p.name}</h2>
+                        </div>
+                        <div>
+                            <p>{p.height}</p>
+                        </div>
 
-        </div>
 
-    )
-}
-export default Character; 
+                    </Card>)
+            })
+            }
+
+        </Container>
+
+
+    );
+};
+
+
+export default Characters; 

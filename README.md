@@ -14,9 +14,9 @@ You are not allowed to collaborate during the sprint challenge.
 
 - [x] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
 - [x] Open the assignment in Canvas and click on the "Set up git" option.
-- [ ] Follow instructions to set up Codegrade's Webhook and Deploy Key.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x] Follow instructions to set up Codegrade's Webhook and Deploy Key.
+- [x] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
+- [x] Check to see that Codegrade has accepted your git submission.
 
 For a step-by-step on setting up Codegrade see [this guide.](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
 
@@ -81,6 +81,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+react is a user interface component library, made to solve the issues when working with complex state webpages.
+2. Describe component state.
+components have state objects when they change, it causes the component to re-render.
+3. Describe props.
+props help pass data between components. parent to child.
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+side effects are the things that affect something outside the scope of the function. we can set the side effects in a React component.
